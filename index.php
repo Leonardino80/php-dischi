@@ -8,17 +8,42 @@
     <title>php-dischi con ajax</title>
   </head>
   <body>
+    <h1>PHP</h1>
+    <div class="container_php">
 
-    <div class="container">
+      <div class="hidden">
+        <?php include 'data.php'?>
+      </div>
+
+      <?php
+      foreach ($dischi as $key => $value) {
+      ?>
+
+      <div class="card" data-index="">
+        <img src="immagini/<?php echo ($value['Cover']) ?>" alt="<?php echo ($value['Cover']) ?>">
+        <ul class="card_data">
+          <li>Titolo: <?php echo ($value['Title']) ?></li>
+          <li>Artista: <?php echo ($value['Artist']) ?></li>
+          <li>Anno:<?php echo ($value['Year']) ?></li>
+        </ul>
+      </div>
+      <?php
+      }
+      ?>
+
+
+    </div>
+    <h1>PHP & Ajax</h1>
+    <div class="container_php_ajax">
+
+
     </div>
 
     <script src="src/js/app.js" charset="utf-8"></script>
 
     <script class="card_finale" type="text/x-handlebars-template">
       <div class="card" data-index="{{id}}">
-        <div class="immagine">
-          <img src="immagini/{{immagine}}" alt="{{immagine}}">
-        </div>
+        <img src="immagini/{{immagine}}" alt="{{immagine}}">
         <ul class="card_data">
           <li>Titolo: {{titolo}}</li>
           <li>Artista: {{artista}}</li>

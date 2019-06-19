@@ -1,2 +1,13 @@
 @import '_common.scss';
 @import '_variables.scss';
+@mixin stile_container{
+padding-left: 30px;
+padding-right: 15px;
+width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-wrap: wrap;
+background: rgb(129,114,81);
+}

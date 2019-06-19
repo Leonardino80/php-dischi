@@ -28,7 +28,7 @@ $(document).ready(function(){
 
         //  inserisco handlebars nel html
         var html = template(context);
-        $(".container").append(html);
+        $(".container_php_ajax").append(html);
       };
     },
     'error': function() {
