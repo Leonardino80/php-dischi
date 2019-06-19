@@ -3,3 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img{
+  width: 100%;
+}
+
+.card {
+  width: 22%;
+  background-color: grey;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // display:inline-block;
+}
+
+.container{
+  padding-left: 30px;
+  padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(129,114,81);
+  background: linear-gradient(45deg, rgba(129,114,81,1) 7%, rgba(9,15,17,1) 100%);
+}
+
+
+li {
+  list-style-type: none;
+}
