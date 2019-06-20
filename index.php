@@ -19,7 +19,7 @@
       foreach ($dischi as $key => $value) {
       ?>
 
-      <div class="card" data-index="">
+      <div class="card" data-type="<?php $key ?>">
         <img src="immagini/<?php echo ($value['Cover']) ?>" alt="<?php echo ($value['Cover']) ?>">
         <ul class="card_data">
           <li>Titolo: <?php echo ($value['Title']) ?></li>
@@ -34,6 +34,11 @@
 
     </div>
     <h1>PHP & Ajax</h1>
+
+    <select>
+      <option value="">scegli artista</option>
+    </select>
+
     <div class="container_php_ajax">
 
 
@@ -42,7 +47,7 @@
     <script src="public/js/app.js" charset="utf-8"></script>
 
     <script class="card_finale" type="text/x-handlebars-template">
-      <div class="card" data-index="{{id}}">
+      <div class="card" data-type="{{id}}">
         <img src="immagini/{{immagine}}" alt="{{immagine}}">
         <ul class="card_data">
           <li>Titolo: {{titolo}}</li>
